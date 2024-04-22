@@ -1,0 +1,99 @@
+* {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+
+body {
+ min-height: 100vh;
+ display: flex;
+ align-items: center;
+ background-image: url('IMG_20230627_231735.jpg');
+ background-size: cover;
+ background-position: center;
+}
+
+
+.container {
+ width: 100vw;
+ flex-direction: column;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ position: relative;
+}
+
+.image {
+ display: flex;
+ justify-content: center;
+ 
+}
+
+.image img {
+ width: 100vw;
+ border: 3px solid black;
+ opacity: 0.9;
+}
+
+.cntrl button {
+ font-size: 50px;
+ color: white;
+ background-color: #FF6ACD;
+ border: none;
+}
+
+.cntrl button:hover {
+ background-color: #6D6AFF;
+ transition: 0.7s ease;
+}
+
+
+.cntrl #prev {
+ position: absolute;
+ top: 40%;
+ left: 0;
+ border-radius: 0 200px 200px 0;
+ padding: 30px 12px 30px 7px;
+ 
+}
+
+.cntrl #next {
+ position: absolute;
+ top: 40%;
+ right: 0;
+ border-radius: 200px 0 0 200px;
+ padding: 30px 7px 30px 12px;
+}
+
+.dot {
+ height: 10px;
+ width: 10px;
+ background-color: lightgrey;
+ position: fixed;
+ border-radius: 100%;
+ margin: 25px;
+}
+
+#dot1 {
+ right: 55vw;
+}
+
+#dot2 {
+ right: 50vw;
+}
+
+#dot3 {
+ right: 45vw;
+}
+
+#dot4 {
+ right: 40vw;
+}
+
+#dot5 {
+ right: 35vw;
+}
+
+.active {
+ background-color: black;
+}
